@@ -34,20 +34,20 @@ const Home: NextPage = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
       <div className="max-sm: container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white">
+        <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-5xl">
           Random <span className="text-[hsl(280,100%,70%)]">Quote</span> Machine
         </h1>
         <div
           id="quote-box"
-          className="h-full w-[640px] max-w-screen-sm rounded-md bg-[#2e026d]/80 p-11 text-white"
+          className="h-full w-full max-w-screen-sm rounded-md bg-[#2e026d]/80 p-11 text-white"
         >
           {!isLoading ? (
             <figure>
               <blockquote className="flex flex-row gap-3">
-                <i className="top-0 text-5xl leading-3 text-[hsl(280,100%,70%)]">
+                <i className="top-0 text-2xl leading-3 text-[hsl(280,100%,70%)] sm:text-5xl">
                   <FaQuoteLeft />
                 </i>
-                <p id="text" className="text-3xl">
+                <p id="text" className="text-1xl sm:text-3xl">
                   {quote.quote}
                 </p>
               </blockquote>
